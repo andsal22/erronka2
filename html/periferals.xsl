@@ -55,7 +55,7 @@
 
   <xsl:template match="Inventario">
     <div class="xml-content">
-      <h2>Periferico</h2>
+      <h2>Peripherals:</h2>
       <xsl:apply-templates select="Periferico"/>
     </div>
   </xsl:template>
