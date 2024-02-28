@@ -55,11 +55,11 @@
 
   <xsl:template match="Inventario">
     <div class="xml-content">
-      <h2>Impresoras</h2>
+      <h2>Printers:</h2>
       <xsl:apply-templates select="Impresora"/>
-      <h2>Proyectores</h2>
+      <h2>Projectors:</h2>
       <xsl:apply-templates select="Proyector"/>
-      <h2>Scanners</h2>
+      <h2>Scanners:</h2>
       <xsl:apply-templates select="Scanner"/>
     </div>
   </xsl:template>
