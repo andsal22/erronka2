@@ -57,7 +57,7 @@
 
   <xsl:template match="Inventario">
     <div class="xml-content">
-      <h2>Accesorios</h2>
+      <h2>Accesories:</h2>
       <xsl:apply-templates select="Accesorio"/>
     </div>
   </xsl:template>
