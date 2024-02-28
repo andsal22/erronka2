@@ -1,28 +1,45 @@
-<?xml version="1.0"?>
-<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+<!ELEMENT Inventario (PC|Periferico|Equipamiento|Accesorio|Impresora|Proyector|Scanner|Servidor)*>
 
-<Inventario>
-<!ELEMENT Inventario (PC | Periferico | Equipamiento | Accesorio)*>
+<!ELEMENT PC (Modelo, ComponentesBasicos)>
+<!ATTLIST PC añoCompra CDATA #REQUIRED
+               proveedor CDATA #REQUIRED>
 
-<!ELEMENT PC (Modelo, RAM, TamanoDelDisco, Ano)>
-<!ELEMENT Modelo (#PCDATA)>
-<!ELEMENT RAM (#PCDATA)>
-<!ELEMENT TamanoDelDisco (#PCDATA)>
-<!ELEMENT Ano (#PCDATA)>
-<!ATTLIST PC tipo CDATA #IMPLIED>
+<!ELEMENT ComponentesBasicos (CPU, RAM, DiscoDuro, TarjetaGrafica)>
 
 <!ELEMENT Periferico (Modelo, Ano, Caracteristicas)>
-<!ELEMENT Caracteristicas (#PCDATA)>
-<!ATTLIST Periferico puerto CDATA #IMPLIED>
+<!ATTLIST Periferico añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
 
 <!ELEMENT Equipamiento (Tipo, Modelo, Ano, Caracteristicas)>
-<!ELEMENT Tipo (#PCDATA)>
-<!ELEMENT Caracteristicas (#PCDATA)>
-<!ATTLIST Equipamiento ubicacion CDATA #IMPLIED>
+<!ATTLIST Equipamiento añoCompra CDATA #REQUIRED
+                      proveedor CDATA #REQUIRED>
 
 <!ELEMENT Accesorio (Tipo, Modelo, Ano, Caracteristicas)>
-<!ELEMENT Tipo (#PCDATA)>
-<!ELEMENT Caracteristicas (#PCDATA)>
-<!ATTLIST Accesorio color CDATA #IMPLIED>
+<!ATTLIST Accesorio añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
 
-</Inventario>
+<!ELEMENT Impresora (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Impresora añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
+
+<!ELEMENT Proyector (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Proyector añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
+
+<!ELEMENT Scanner (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Scanner añoCompra CDATA #REQUIRED
+                  proveedor CDATA #REQUIRED>
+
+<!ELEMENT Servidor (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Servidor añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED
+                   ip CDATA #IMPLIED>
+
+<!ELEMENT Modelo (#PCDATA)>
+<!ELEMENT CPU (#PCDATA)>
+<!ELEMENT RAM (#PCDATA)>
+<!ELEMENT DiscoDuro (#PCDATA)>
+<!ELEMENT TarjetaGrafica (#PCDATA)>
+<!ELEMENT Ano (#PCDATA)>
+<!ELEMENT Caracteristicas (#PCDATA)>
+<!ELEMENT Tipo (#PCDATA)>
