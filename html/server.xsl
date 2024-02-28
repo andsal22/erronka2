@@ -57,7 +57,7 @@
 
   <xsl:template match="Inventario">
     <div class="xml-content">
-      <h2>Servers</h2>
+      <h2>Servers:</h2>
       <xsl:apply-templates select="Servidor"/>
     </div>
   </xsl:template>
@@ -71,8 +71,6 @@
 	<ul>
 	<h3>Year of Production:</h3>
 	<xsl:apply-templates select="Ano"/>
-	</ul>
-	<ul>
 	</ul>
 	<ul>
 	<h3>Year of Purchase:</h3>
