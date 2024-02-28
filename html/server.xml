@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+<?xml-stylesheet type="text/xsl" href="server.xsl"?>
+
+<Inventario>s
+    <Servidor añoCompra="2017" proveedor="ProveedorN" ip="192.168.1.100">
+        <Modelo>Dell PowerEdge R740</Modelo>
+        <Ano>2017</Ano>
+		 <ComponentesBasicos>
+            <CPU>Intel Xeon</CPU>
+            <RAM>32GB DDR4 ECC</RAM>
+            <DiscoDuro>512GB SSD + 10TB HDD</DiscoDuro>
+            <TarjetaGrafica>Intel HD Graphics 4600</TarjetaGrafica>
+        </ComponentesBasicos>
+    </Servidor>
+</Inventario>

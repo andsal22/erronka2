@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+<?xml-stylesheet type="text/xsl" href="periferals.xsl"?>
+
+<Inventario>
+    <Periferico añoCompra="2023" proveedor="ProveedorC">
+        <Modelo>Logitech G203</Modelo>
+        <Ano>2023</Ano>
+        <Caracteristicas>Sensor Optiplex R34</Caracteristicas>
+    </Periferico>
+    <Periferico añoCompra="2012" proveedor="ProveedorD">
+        <Modelo>Gamdias OuRea</Modelo>
+        <Ano>2012</Ano>
+        <Caracteristicas>Sensor Gamdias 13</Caracteristicas>
+    </Periferico>
+</Inventario>

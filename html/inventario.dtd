@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+
+<Inventario>
+<!ELEMENT Inventario (PC | Periferico | Equipamiento | Accesorio)*>
+
+<!ELEMENT PC (Modelo, RAM, TamanoDelDisco, Ano)>
+<!ELEMENT Modelo (#PCDATA)>
+<!ELEMENT RAM (#PCDATA)>
+<!ELEMENT TamanoDelDisco (#PCDATA)>
+<!ELEMENT Ano (#PCDATA)>
+<!ATTLIST PC tipo CDATA #IMPLIED>
+
+<!ELEMENT Periferico (Modelo, Ano, Caracteristicas)>
+<!ELEMENT Caracteristicas (#PCDATA)>
+<!ATTLIST Periferico puerto CDATA #IMPLIED>
+
+<!ELEMENT Equipamiento (Tipo, Modelo, Ano, Caracteristicas)>
+<!ELEMENT Tipo (#PCDATA)>
+<!ELEMENT Caracteristicas (#PCDATA)>
+<!ATTLIST Equipamiento ubicacion CDATA #IMPLIED>
+
+<!ELEMENT Accesorio (Tipo, Modelo, Ano, Caracteristicas)>
+<!ELEMENT Tipo (#PCDATA)>
+<!ELEMENT Caracteristicas (#PCDATA)>
+<!ATTLIST Accesorio color CDATA #IMPLIED>
+
+</Inventario>

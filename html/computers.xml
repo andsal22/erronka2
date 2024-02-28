@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+<?xml-stylesheet type="text/xsl" href="computers.xsl"?>
+
+<Inventario>
+    <PC añoCompra="2014" proveedor="ProveedorA">
+        <Modelo>ThinkPad T440p</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i5-4300M</CPU>
+            <RAM>8GB DDR3</RAM>
+            <DiscoDuro>1TB HDD</DiscoDuro>
+            <TarjetaGrafica>Intel HD Graphics 4600</TarjetaGrafica>
+        </ComponentesBasicos>
+    </PC>
+    <PC añoCompra="2017" proveedor="ProveedorB">
+        <Modelo>ThinkPad T470s</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i7-7500U</CPU>
+            <RAM>16GB DDR4</RAM>
+            <DiscoDuro>512GB SSD</DiscoDuro>
+            <TarjetaGrafica>Intel HD Graphics 620</TarjetaGrafica>
+        </ComponentesBasicos>
+    </PC>
+</Inventario>

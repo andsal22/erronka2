@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+<?xml-stylesheet type="text/xsl" href="other.xsl"?>
+
+<Inventario>
+    <Impresora añoCompra="2018" proveedor="ProveedorI">
+        <Modelo>Brother ColorFUL 1369</Modelo>
+        <Ano>2018</Ano>
+        <Caracteristicas>Impresión a color, 600dpi, WiFi</Caracteristicas>
+    </Impresora>
+    <Proyector añoCompra="2019" proveedor="ProveedorJ">
+        <Modelo>Optoma 94375FHD</Modelo>
+        <Ano>2019</Ano>
+        <Caracteristicas>Resolución 1080p, 3000 lúmenes</Caracteristicas>
+    </Proyector>
+    <Scanner añoCompra="2020" proveedor="ProveedorK">
+        <Modelo>Epson ProScan 420</Modelo>
+        <Ano>2020</Ano>
+        <Caracteristicas>Escaneo a doble cara, 1200dpi</Caracteristicas>
+    </Scanner>
+    <Equipamiento añoCompra="2018" proveedor="ProveedorL">
+        <Tipo>Switch</Tipo>
+        <Modelo>Cisco Catalyst 2960</Modelo>
+        <Ano>2018</Ano>
+        <Caracteristicas>24 Puertos Gigabit</Caracteristicas>
+	</Equipamiento>
+</Inventario>

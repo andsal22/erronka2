@@ -1,0 +1,160 @@
+body {
+   font-family: Arial, sans-serif; 
+   margin: 0; 
+   padding: 0; 
+}
+
+/* Styles for the header section */
+header {
+   background-color: #333; 
+   color: #fff; 
+   text-align: center; 
+   padding: 20px; /* Add padding to the header */
+}
+
+/* Styles for the banner */
+.banner {
+   max-width: 800px; 
+   margin: 0 auto; 
+}
+
+/* Styles for the navigation bar */
+nav {
+   background-color: #555; 
+   overflow: hidden; /* Clear any floated elements inside the navigation bar */
+}
+
+/* Styles for the navigation list */
+nav ul {
+   list-style-type: none; 
+   margin: 0; 
+   padding: 0; 
+}
+
+/* Styles for each item in the navigation list */
+nav ul li {
+   float: left; /* Float the list items to create a horizontal layout */
+}
+
+/* Styles for the entries in the navigation bar */
+nav ul li a {
+   display: block; 
+   color: #fff; 
+   text-align: center; 
+   padding: 14px 16px; 
+   text-decoration: none; 
+}
+
+/* Hover styles for the navigation entries when hovering the entry */
+nav ul li a:hover {
+   background-color: #777; 
+   border-radius: 25px;
+}
+
+/* Styles for dropdown menus */
+.dropdown {
+   display: inline-block; 
+}
+
+/* Styles for the dropdown content */
+.dropdown-content {
+   display: none; /* Initially hide the dropdown content */
+   position: absolute; 
+   background-color: #555; 
+   min-width: 160px; 
+   box-shadow: 0 8px 16px rgba(0,0,0,0.2); 
+   z-index: 1; /* Set a higher z-index to ensure the dropdown is above other elements */
+}
+
+/* Display dropdown content on hover */
+.dropdown:hover .dropdown-content {
+   display: block;
+}
+
+/* Styles for the main content section */
+main {
+   display: flex; /* Use flexbox for the main content section */
+   flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+   justify-content: space-between; /* Space elements evenly along the main axis */
+   max-width: 1200px; 
+   margin: 20px auto; 
+}
+
+/* Styles for the main content area */
+.main-content {
+   width: 70%; 
+   box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Styles for the aside section */
+aside {
+   width: 25%; 
+   background-color: #f1f1f1; 
+   padding: 20px; 
+   box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+/* Styles for the footer section */
+footer {
+   background-color: #333; 
+   color: #fff; 
+   text-align: center; 
+   padding: 10px; 
+   position: relative;
+   bottom: 0; 
+   width: 100%; 
+}
+
+* {
+   box-sizing: border-box;
+ }
+ 
+ /* Create two equal columns that floats next to each other */
+ .column {
+   float: left;
+   width: 50%;
+   padding: 10px;
+   height: 300px; 
+ }
+ 
+ /* Clear floats after the columns */
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+/* for mobile devices */
+@media only screen and (max-width: 768px) {
+   body {
+       font-size: 18px; 
+   }
+
+   nav ul li {
+       float: none; /* Remove float to stack list items vertically on small screens */
+   }
+
+   nav ul li a {
+       display: block; /* Make the links block-level on small screens */
+       text-align: left; /* Align text to the left on small screens */
+   }
+
+   .main-content {
+       width: 100%; /* Set the width of the main content area to 100% on small screens */
+   }
+
+   aside {
+       width: 100%; /* Set the width of the aside section to 100% on small screens */
+   }
+}
+
+.xml-content {
+    margin: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}

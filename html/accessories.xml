@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+<?xml-stylesheet type="text/xsl" href="accessories.xsl"?>
+
+<Inventario>
+    <Accesorio añoCompra="2019" proveedor="ProveedorG">
+        <Tipo>Ventilador</Tipo>
+        <Modelo>Huananzi Ventilador de Mesa USB</Modelo>
+        <Ano>2019</Ano>
+        <Caracteristicas>3 Aspas, USB</Caracteristicas>
+    </Accesorio>
+    <Accesorio añoCompra="2015" proveedor="ProveedorH">
+        <Tipo>Alfombrilla</Tipo>
+        <Modelo>Roccat Taito Controll</Modelo>
+        <Ano>2015</Ano>
+        <Caracteristicas>XL, Negro con bordes azul cian, Gaming</Caracteristicas>
+    </Accesorio>
+</Inventario>
