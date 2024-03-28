@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Inventario SYSTEM "inventario.dtd">
+<?xml-stylesheet type="text/xsl" href="periferals.xsl"?>
+
+<Inventario>
+    <Periferico añoCompra="2023" proveedor="ProveedorC">
+        <Modelo>Logitech G203</Modelo>
+        <Ano>2023</Ano>
+        <Caracteristicas>Sensor Optiplex R34</Caracteristicas>
+        <Image path="../img/aaa/14.png"/>
+    </Periferico>
+    <Periferico añoCompra="2012" proveedor="ProveedorD">
+        <Modelo>Gamdias OuRea</Modelo>
+        <Ano>2012</Ano>
+        <Caracteristicas>Sensor Gamdias 13</Caracteristicas>
+        <Image path="../img/aaa/15.png"/>
+    </Periferico>
+    <Periferico añoCompra="2022" proveedor="ProveedorA">
+        <Tipo>Teclado</Tipo>
+        <Modelo>Logitech G Pro X</Modelo>
+        <Ano>2022</Ano>
+        <Caracteristicas>Mecánico, RGB, Gaming</Caracteristicas>
+        <Image path="../img/aaa/3.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2023" proveedor="ProveedorB">
+        <Tipo>Ratón</Tipo>
+        <Modelo>Razer DeathAdder V2</Modelo>
+        <Ano>2023</Ano>
+        <Caracteristicas>Óptico, 20K DPI, RGB</Caracteristicas>
+        <Image path="../img/aaa/4.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2020" proveedor="ProveedorC">
+        <Tipo>Monitor</Tipo>
+        <Modelo>ASUS ROG Swift PG279Q</Modelo>
+        <Ano>2020</Ano>
+        <Caracteristicas>27", 1440p, 165Hz, IPS, G-Sync</Caracteristicas>
+        <Image path="../img/aaa/5.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2021" proveedor="ProveedorD">
+        <Tipo>Auriculares</Tipo>
+        <Modelo>Sennheiser HD 660 S</Modelo>
+        <Ano>2021</Ano>
+        <Caracteristicas>Abierto, Cable desmontable, Sonido de alta resolución</Caracteristicas>
+        <Image path="../img/aaa/6.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2022" proveedor="ProveedorF">
+        <Tipo>Webcam</Tipo>
+        <Modelo>Logitech C920 HD Pro</Modelo>
+        <Ano>2022</Ano>
+        <Caracteristicas>Full HD 1080p, Autofoco, Micrófonos duales</Caracteristicas>
+        <Image path="../img/aaa/7.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2019" proveedor="ProveedorG">
+        <Tipo>Altavoces</Tipo>
+        <Modelo>Logitech Z623</Modelo>
+        <Ano>2019</Ano>
+        <Caracteristicas>200W, THX, Entradas RCA, 3.5mm, Controles de volumen y graves</Caracteristicas>
+        <Image path="../img/aaa/8.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2024" proveedor="ProveedorH">
+        <Tipo>Disco Duro Externo</Tipo>
+        <Modelo>Samsung T7</Modelo>
+        <Ano>2024</Ano>
+        <Caracteristicas>SSD, USB 3.2 Gen 2, AES 256-bit encryption</Caracteristicas>
+        <Image path="../img/aaa/9.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2017" proveedor="ProveedorI">
+        <Tipo>Router</Tipo>
+        <Modelo>TP-Link Archer T3U</Modelo>
+        <Ano>2017</Ano>
+        <Caracteristicas>AC1750, Dual band</Caracteristicas>
+        <Image path="../img/aaa/10.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2023" proveedor="ProveedorJ">
+        <Tipo>Tableta gráfica</Tipo>
+        <Modelo>Wacom Intuos Pro M</Modelo>
+        <Ano>2023</Ano>
+        <Caracteristicas>8192 niveles de presión, Inalámbrica, Bluetooth</Caracteristicas>
+        <Image path="../img/aaa/11.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2020" proveedor="ProveedorM">
+        <Tipo>Hub USB</Tipo>
+        <Modelo>Anker 7-Port USB 3.0 Data Hub</Modelo>
+        <Ano>2020</Ano>
+        <Caracteristicas>7 puertos USB 3.0, 5Gbps de velocidad de transferencia</Caracteristicas>
+        <Image path="../img/aaa/12.png"/>
+    </Periferico>
+    
+    <Periferico añoCompra="2019" proveedor="ProveedorN">
+        <Tipo>Microfono</Tipo>
+        <Modelo>Blue Yeti</Modelo>
+        <Ano>2019</Ano>
+        <Caracteristicas>USB, Patrón de captación múltiple, Control de ganancia, Mute</Caracteristicas>
+        <Image path="../img/aaa/13.png"/>
+    </Periferico>
+
+</Inventario>

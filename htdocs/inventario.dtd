@@ -1,0 +1,45 @@
+<!ELEMENT Inventario (PC|Periferico|Equipamiento|Accesorio|Impresora|Proyector|Scanner|Servidor)*>
+
+<!ELEMENT PC (Modelo, ComponentesBasicos)>
+<!ATTLIST PC añoCompra CDATA #REQUIRED
+               proveedor CDATA #REQUIRED>
+
+<!ELEMENT ComponentesBasicos (CPU, RAM, DiscoDuro, TarjetaGrafica)>
+
+<!ELEMENT Periferico (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Periferico añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
+
+<!ELEMENT Equipamiento (Tipo, Modelo, Ano, Caracteristicas)>
+<!ATTLIST Equipamiento añoCompra CDATA #REQUIRED
+                      proveedor CDATA #REQUIRED>
+
+<!ELEMENT Accesorio (Tipo, Modelo, Ano, Caracteristicas)>
+<!ATTLIST Accesorio añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
+
+<!ELEMENT Impresora (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Impresora añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
+
+<!ELEMENT Proyector (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Proyector añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED>
+
+<!ELEMENT Scanner (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Scanner añoCompra CDATA #REQUIRED
+                  proveedor CDATA #REQUIRED>
+
+<!ELEMENT Servidor (Modelo, Ano, Caracteristicas)>
+<!ATTLIST Servidor añoCompra CDATA #REQUIRED
+                   proveedor CDATA #REQUIRED
+                   ip CDATA #IMPLIED>
+
+<!ELEMENT Modelo (#PCDATA)>
+<!ELEMENT CPU (#PCDATA)>
+<!ELEMENT RAM (#PCDATA)>
+<!ELEMENT DiscoDuro (#PCDATA)>
+<!ELEMENT TarjetaGrafica (#PCDATA)>
+<!ELEMENT Ano (#PCDATA)>
+<!ELEMENT Caracteristicas (#PCDATA)>
+<!ELEMENT Tipo (#PCDATA)>

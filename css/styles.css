@@ -1,3 +1,4 @@
+
 body {
    font-family: Arial, sans-serif; 
    margin: 0; 
@@ -28,12 +29,12 @@ nav {
 nav ul {
    list-style-type: none; 
    margin: 0; 
-   padding: 0; 
+   padding: 0;
 }
 
 /* Styles for each item in the navigation list */
 nav ul li {
-   float: left; /* Float the list items to create a horizontal layout */
+   float:left ; /* Float the list items to create a horizontal layout */
 }
 
 /* Styles for the entries in the navigation bar */
@@ -157,4 +158,16 @@ footer {
     padding: 10px;
     margin-bottom: 10px;
     background-color: #fff;
+}
+
+.images {
+font-family: "Comic Sans MS";
+font-style: italic;
+height: 30%;
+width: 30%;
+}
+
+.lmao {
+   display:flex;
+   justify-content: center;
 }
