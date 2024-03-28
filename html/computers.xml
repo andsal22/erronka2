@@ -7,18 +7,187 @@
         <Modelo>ThinkPad T440p</Modelo>
         <ComponentesBasicos>
             <CPU>Intel Core i5-4300M</CPU>
-            <RAM>8GB DDR3</RAM>
-            <DiscoDuro>1TB HDD</DiscoDuro>
+            <RAM>
+                <Modulo>8GB DDR3</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>1TB HDD</Modulo>
+            </DiscoDuro>
             <TarjetaGrafica>Intel HD Graphics 4600</TarjetaGrafica>
         </ComponentesBasicos>
+        <Image path="../img/pc/1.png"/>
     </PC>
     <PC añoCompra="2017" proveedor="ProveedorB">
         <Modelo>ThinkPad T470s</Modelo>
         <ComponentesBasicos>
             <CPU>Intel Core i7-7500U</CPU>
-            <RAM>16GB DDR4</RAM>
-            <DiscoDuro>512GB SSD</DiscoDuro>
+            <RAM>
+                <Modulo>8GB DDR4</Modulo>
+                <Modulo>8GB DDR4</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>512GB SSD</Modulo>
+            </DiscoDuro>
             <TarjetaGrafica>Intel HD Graphics 620</TarjetaGrafica>
         </ComponentesBasicos>
+        <Image path="../img/pc/2.png"/>
+    </PC>
+    <PC añoCompra="2019" proveedor="ProveedorC">
+        <Modelo>ThinkPad X1 Carbon</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i7-8550U</CPU>
+            <RAM>
+                <Modulo>16GB LPDDR3</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>512GB PCIe SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel UHD Graphics 620</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/3.png"/>
+    </PC>
+    <PC añoCompra="2018" proveedor="ProveedorD">
+        <Modelo>MacBook Pro</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i9</CPU>
+            <RAM>
+                <Modulo>16GB DDR4</Modulo>
+                <Modulo>16GB DDR4</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>1TB SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Radeon Pro 560X</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/4.png"/>
+    </PC>
+    <PC añoCompra="2020" proveedor="ProveedorE">
+        <Modelo>Dell XPS 13</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i7-1065G7</CPU>
+            <RAM>
+                <Modulo>16GB LPDDR4x</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>512GB PCIe SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel Iris Plus Graphics</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/5.png"/>
+    </PC>
+    <PC añoCompra="2016" proveedor="ProveedorF">
+        <Modelo>HP EliteBook 840 G3</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i5-6300U</CPU>
+            <RAM>
+                <Modulo>8GB DDR4</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>256GB SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel HD Graphics 520</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/6.png"/>
+    </PC>
+    <PC añoCompra="2019" proveedor="ProveedorG">
+        <Modelo>Surface Laptop 3</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i5-1035G7</CPU>
+            <RAM>
+                <Modulo>8GB LPDDR4x</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>256GB SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel Iris Plus Graphics</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/7.png"/>
+    </PC>
+    <PC añoCompra="2017" proveedor="ProveedorH">
+        <Modelo>Asus ZenBook UX330UA</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i5-7200U</CPU>
+            <RAM>
+                <Modulo>8GB DDR3</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>256GB SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel HD Graphics 620</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/8.png"/>
+    </PC>
+    <PC añoCompra="2021" proveedor="ProveedorI">
+        <Modelo>Lenovo ThinkPad X1 Yoga Gen 6</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i7-1185G7</CPU>
+            <RAM>
+                <Modulo>16GB LPDDR4x</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>512GB PCIe SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel Iris Xe Graphics</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/9.png"/>
+    </PC>
+    <PC añoCompra="2018" proveedor="ProveedorJ">
+        <Modelo>Microsoft Surface Book 2</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i7-8650U</CPU>
+            <RAM>
+                <Modulo>16GB LPDDR3</Modulo>
+                <Modulo>16GB LPDDR3</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>512GB SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>NVIDIA GeForce GTX 1050</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/10.png"/>
+    </PC>
+    <PC añoCompra="2019" proveedor="ProveedorK">
+        <Modelo>HP Spectre x360</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i7-8565U</CPU>
+            <RAM>
+                <Modulo>16GB DDR4</Modulo>
+                <Modulo>16GB DDR4</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>512GB SSD</Modulo>
+                <Modulo>4TB HDD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel UHD Graphics 620</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/11.png"/>
+    </PC>
+    <PC añoCompra="2020" proveedor="ProveedorL">
+        <Modelo>Apple MacBook Air</Modelo>
+        <ComponentesBasicos>
+            <CPU>Apple M1</CPU>
+            <RAM>
+                <Modulo>8GB LPDDR4X</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>256GB SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Integrated Apple GPU</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/12.png"/>
+    </PC>
+    <PC añoCompra="2016" proveedor="ProveedorM">
+        <Modelo>Lenovo ThinkPad X260</Modelo>
+        <ComponentesBasicos>
+            <CPU>Intel Core i5-6200U</CPU>
+            <RAM>
+                <Modulo>8GB DDR4</Modulo>
+            </RAM>
+            <DiscoDuro>
+                <Modulo>256GB SSD</Modulo>
+            </DiscoDuro>
+            <TarjetaGrafica>Intel HD Graphics 520</TarjetaGrafica>
+        </ComponentesBasicos>
+        <Image path="../img/pc/13.png"/>
     </PC>
 </Inventario>

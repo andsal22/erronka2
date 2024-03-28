@@ -18,6 +18,7 @@
 
         <!-- Navigation Menu -->
         <nav>
+          <div class="lmao">
           <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
@@ -32,9 +33,8 @@
               <li class="dropdown">
                <a href="#xml">Inventory</a>
                <div class="dropdown-content">
-                <a href="accessories.xml">Accessories inventary</a>
                 <a href="computers.xml">Computer invenrtory</a>
-                <a href="equipment.xml">Equipment inventory</a>
+                <a href="equipment.xml">Network Equipment inventory</a>
                 <a href="other.xml">Other equipment invenory</a>
                 <a href="periferals.xml">Peripheral inventory</a>
                 <a href="server.xml">Server inventory</a>
@@ -44,12 +44,15 @@
                   <i class="fas fa-bars"></i>
               </li>
           </ul>
+        </div>
       </nav>   
 
+      
         <xsl:apply-templates select="/Inventario"/>
 
         <footer>
-        </footer>
+          <p>© 2024 Andoni Salegui Izquierdo. All rights reserved.</p>
+      </footer>
       </body>
     </html>
   </xsl:template>
@@ -63,42 +66,48 @@
 
   <xsl:template match="PC | Periferico | Equipamiento | Accesorio | Impresora | Proyector | Scanner | Servidor">
     <div class="item">
-	<ul>
-	<h3>Model:</h3>
-      <xsl:apply-templates select="Modelo"/>
-	</ul>
-	<ul>
-	<h3>Year of Purchase:</h3>
-      <xsl:apply-templates select="@añoCompra"/>
-	</ul>
-	<ul>
-	<h3>Supplyer</h3>
-      <xsl:apply-templates select="@proveedor"/>
-	</ul>
-	<ul>
-	<h3>CPU:</h3>
-      <xsl:apply-templates select="ComponentesBasicos/CPU"/>
-	</ul>
-	<ul>
-	<h3>RAM:</h3>
-      <xsl:apply-templates select="ComponentesBasicos/RAM"/>
-	</ul>
-	<ul>
-	<h3>Storage:</h3>
-      <xsl:apply-templates select="ComponentesBasicos/DiscoDuro"/>
-	</ul>
-	<ul>
-	<h3>GPU:</h3>
-      <xsl:apply-templates select="ComponentesBasicos/TarjetaGrafica"/>
-      <xsl:apply-templates select="Tipo"/>
-	</ul>
-	<ul>
-	  <img width="20%" height="20%" src="../img/fpc.jpg" class="CalloutRightPhoto"/>
-	  </ul>
+      <ul>
+        <h3>Model:</h3>
+        <xsl:apply-templates select="Modelo"/>
+      </ul>
+      <ul>
+        <h3>Year of Purchase:</h3>
+        <xsl:apply-templates select="@añoCompra"/>
+      </ul>
+      <ul>
+        <h3>Supplier</h3>
+        <xsl:apply-templates select="@proveedor"/>
+      </ul>
+      <ul>
+        <h3>CPU:</h3>
+        <xsl:apply-templates select="ComponentesBasicos/CPU"/>
+      </ul>
+      <ul>
+        <h3>RAM:</h3>
+        <xsl:apply-templates select="ComponentesBasicos/RAM/Modulo"/>
+      </ul>
+      <ul>
+        <h3>Storage:</h3>
+        <xsl:apply-templates select="ComponentesBasicos/DiscoDuro/Modulo"/>
+      </ul>
+      <ul>
+        <h3>GPU:</h3>
+        <xsl:apply-templates select="ComponentesBasicos/TarjetaGrafica"/>
+        <xsl:apply-templates select="Tipo"/>
+      </ul>
+      <ul>
+        <img class="images" src="{Image/@path}" alt="404 Image not found"/>
+      </ul>
     </div>
   </xsl:template>
 
   <xsl:template match="Modelo | Ano | Caracteristicas | Tipo">
+    <p>
+      <xsl:value-of select="."/>
+    </p>
+  </xsl:template>
+
+  <xsl:template match="Modulo">
     <p>
       <xsl:value-of select="."/>
     </p>

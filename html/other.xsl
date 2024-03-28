@@ -18,6 +18,7 @@
 
         <!-- Navigation Menu -->
         <nav>
+          <div class="lmao">
           <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
@@ -32,9 +33,8 @@
               <li class="dropdown">
                <a href="#xml">Inventory</a>
                <div class="dropdown-content">
-                <a href="accessories.xml">Accessories inventary</a>
                 <a href="computers.xml">Computer invenrtory</a>
-                <a href="equipment.xml">Equipment inventory</a>
+                <a href="equipment.xml">Network Equipment inventory</a>
                 <a href="other.xml">Other equipment invenory</a>
                 <a href="periferals.xml">Peripheral inventory</a>
                 <a href="server.xml">Server inventory</a>
@@ -44,22 +44,26 @@
                   <i class="fas fa-bars"></i>
               </li>
           </ul>
-      </nav>
-   
+        </div>
+      </nav>   
+
 
         <xsl:apply-templates select="/Inventario"/>
 
+        <footer>
+          <p>© 2024 Andoni Salegui Izquierdo. All rights reserved.</p>
+      </footer>
       </body>
     </html>
   </xsl:template>
 
   <xsl:template match="Inventario">
     <div class="xml-content">
-      <h2>Printers:</h2>
+      <h2>Impresoras</h2>
       <xsl:apply-templates select="Impresora"/>
-      <h2>Projectors:</h2>
+      <h2>Proyectores</h2>
       <xsl:apply-templates select="Proyector"/>
-      <h2>Scanners:</h2>
+      <h2>Scanners</h2>
       <xsl:apply-templates select="Scanner"/>
     </div>
   </xsl:template>
@@ -89,7 +93,7 @@
       <xsl:apply-templates select="@proveedor"/>
 	</ul>
 	<ul>
-		<img width="20%" height="20%" src="../img/ofice.jpg" class="CalloutRightPhoto"/>
+		<img class="images" src="{Image/@path}" alt="404 Image not found"/>
 	</ul>
     </div>
   </xsl:template>

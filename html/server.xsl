@@ -18,6 +18,7 @@
 
         <!-- Navigation Menu -->
         <nav>
+          <div class="lmao">
           <ul class="nav-links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
@@ -32,9 +33,8 @@
               <li class="dropdown">
                <a href="#xml">Inventory</a>
                <div class="dropdown-content">
-                <a href="accessories.xml">Accessories inventary</a>
                 <a href="computers.xml">Computer invenrtory</a>
-                <a href="equipment.xml">Equipment inventory</a>
+                <a href="equipment.xml">Network Equipment inventory</a>
                 <a href="other.xml">Other equipment invenory</a>
                 <a href="periferals.xml">Peripheral inventory</a>
                 <a href="server.xml">Server inventory</a>
@@ -44,20 +44,21 @@
                   <i class="fas fa-bars"></i>
               </li>
           </ul>
-      </nav>
-   
+        </div>
+      </nav>   
 
         <xsl:apply-templates select="/Inventario"/>
 
         <footer>
-        </footer>
+          <p>© 2024 Andoni Salegui Izquierdo. All rights reserved.</p>
+      </footer>
       </body>
     </html>
   </xsl:template>
 
   <xsl:template match="Inventario">
     <div class="xml-content">
-      <h2>Servers:</h2>
+      <h2>Servers</h2>
       <xsl:apply-templates select="Servidor"/>
     </div>
   </xsl:template>
@@ -71,6 +72,8 @@
 	<ul>
 	<h3>Year of Production:</h3>
 	<xsl:apply-templates select="Ano"/>
+	</ul>
+	<ul>
 	</ul>
 	<ul>
 	<h3>Year of Purchase:</h3>
@@ -102,7 +105,7 @@
       <xsl:apply-templates select="Tipo"/>
 	</ul>
 	<ul>
-		  <img width="15%" height="15%" src="../img/serv.jpg" class="CalloutRightPhoto"/>
+		  <img class="images" src="{Image/@path}" alt="404 Image not found"/>
 	</ul>
     </div>
   </xsl:template>
